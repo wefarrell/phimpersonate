@@ -5,9 +5,4 @@ This will take a file that has a first and last name in the first 24 characters 
 phimpersonate -c 1-12:first_name,13-24:last_name file_with_phi.txt
 ```
 
-Output:
-
-```
-Bob         Smith
-```
-
+The fake names are generated deterministically based on the original value, so fake values will be consistent across multiple files if the real values are consistent.
